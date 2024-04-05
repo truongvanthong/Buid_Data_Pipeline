@@ -28,7 +28,7 @@ Mở Docker desktop
 > url: mongodb://localhost:27017
 + Mở Advanced và chọn Authentication: 
     + Username: admin
-    + Password: example
+    + Password: admin
     + Authentication Database: admin
 
 ## Build App Search
@@ -44,7 +44,7 @@ Mở Docker desktop
       - qdrant_db
       - mongodb
 ```
-2. Build App Search:
+2. Build App Search: nhớ cd vô airflow
 > docker compose myapp up --build
 3. Truy cập vào App Search UI:
 > http://localhost:8989/
