@@ -44,7 +44,7 @@ Mở Docker desktop
       - qdrant_db
       - mongodb
 ```
-2. Build App Search:
+2. Build App Search: nhớ cd vô airflow
 > docker compose myapp up --build
 3. Truy cập vào App Search UI:
 > http://localhost:8989/
