@@ -14,13 +14,12 @@
   #     - qdrant_db
   #     - mongodb
 ```
-Mở Docker desktop
-
+0. Mở Docker Desktop
 1. Vào airflow:
 > cd airflow
 2. Build Data Pipeline:
 > docker compose up --build
-3. Truy cập vào Airflow UI:
+3. Truy cập vào Airflow UI: TK-MK: airflow-airflow
 > http://localhost:8080/
 4. Truy cập vào QdrantDB UI:
 > http://localhost:6333/dashboard
@@ -30,6 +29,14 @@ Mở Docker desktop
     + Username: admin
     + Password: admin
     + Authentication Database: admin
+6. Thêm fit và json vào thư mục dags:
++ copy nó vào
++ New terminal (PS):
+> docker ps
++ Lấy id của scheduler airflow
+> docker exec -it 3id bash
+
+> airflow scheduler
 
 ## Build App Search
 1. Mở lại docker-compose.yml và bỏ comment các thông số sau:
@@ -45,7 +52,7 @@ Mở Docker desktop
       - mongodb
 ```
 2. Build App Search: nhớ cd vô airflow
-> docker compose myapp up --build
+> docker compose up myapp --build
 3. Truy cập vào App Search UI:
 > http://localhost:8989/
 4. Vào file test_Thong.ipynb test:
