@@ -28,7 +28,7 @@ Mở Docker desktop
 > url: mongodb://localhost:27017
 + Mở Advanced và chọn Authentication: 
     + Username: admin
-    + Password: example
+    + Password: admin
     + Authentication Database: admin
 
 ## Build App Search
