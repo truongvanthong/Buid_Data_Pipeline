@@ -16,7 +16,9 @@
 ```
 0. Mở Docker Desktop
 1. Vào airflow:
-> cd airflow
+```bash
+cd airflow
+```
 2. Build Data Pipeline:
 > docker compose up --build
 3. Truy cập vào Airflow UI: TK-MK: airflow-airflow
