@@ -20,7 +20,9 @@
 cd airflow
 ```
 2. Build Data Pipeline:
-> docker compose up --build
+```bash
+docker compose up --build
+```
 3. Truy cập vào Airflow UI: TK-MK: airflow-airflow
 > http://localhost:8080/
 4. Truy cập vào QdrantDB UI:
@@ -34,12 +36,16 @@ cd airflow
 6. Thêm fit và json vào thư mục dags:
 + copy nó vào
 + New terminal (PS):
-> docker ps
+```bash
+docker ps
+```
 + Lấy id của scheduler airflow
-> docker exec -it 3id bash
-
-> airflow scheduler
-
+```bash
+docker exec -it 3id bash
+```
+```bash
+airflow scheduler
+```
 ## Build App Search
 1. Mở lại docker-compose.yml và bỏ comment các thông số sau:
 ```
@@ -54,7 +60,9 @@ cd airflow
       - mongodb
 ```
 2. Build App Search: nhớ cd vô airflow
-> docker compose up myapp --build
+```bash
+docker compose up myapp --build
+```
 3. Truy cập vào App Search UI:
 > http://localhost:8989/
 4. Vào file test_Thong.ipynb test:
